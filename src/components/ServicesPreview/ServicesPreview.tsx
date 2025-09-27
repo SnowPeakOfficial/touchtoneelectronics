@@ -14,37 +14,37 @@ const iconMap = {
   Printer
 };
 
-// Temha-style vibrant color schemes
+// Apple-style consistent red color schemes
 const colorSchemes = [
   {
-    bg: 'from-orange-500 to-red-600',
+    bg: 'from-red-600 to-red-700',
     text: 'text-white',
-    shadow: 'shadow-orange-500/30'
+    shadow: 'shadow-red-500/30'
   },
   {
-    bg: 'from-blue-500 to-purple-700',
+    bg: 'from-red-700 to-red-800',
     text: 'text-white',
-    shadow: 'shadow-blue-500/30'
+    shadow: 'shadow-red-600/30'
   },
   {
-    bg: 'from-green-500 to-cyan-600',
+    bg: 'from-red-500 to-red-600',
     text: 'text-white',
-    shadow: 'shadow-green-500/30'
+    shadow: 'shadow-red-500/30'
   },
   {
-    bg: 'from-purple-500 to-pink-600',
+    bg: 'from-red-600 to-red-800',
     text: 'text-white',
-    shadow: 'shadow-purple-500/30'
+    shadow: 'shadow-red-600/30'
   },
   {
-    bg: 'from-yellow-500 to-orange-600',
+    bg: 'from-red-700 to-red-900',
     text: 'text-white',
-    shadow: 'shadow-yellow-500/30'
+    shadow: 'shadow-red-700/30'
   },
   {
-    bg: 'from-indigo-500 to-blue-700',
+    bg: 'from-red-500 to-red-700',
     text: 'text-white',
-    shadow: 'shadow-indigo-500/30'
+    shadow: 'shadow-red-500/30'
   }
 ];
 
@@ -52,27 +52,27 @@ const ServicesPreview = () => {
   console.log('ServicesPreview component rendering with new design');
   return (
     <>
-      {/* Completely New Design - Apple/Temha/SHKW Inspired */}
-      <section className="py-32 bg-black overflow-hidden relative">
+      {/* Apple-Style Design - Consistent with HeroSection */}
+      <section className="py-32 bg-gray-50 overflow-hidden relative">
         
         {/* Background Pattern */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-20 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-red-600/10 rounded-full blur-3xl"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           
-          {/* Temha-Style Header */}
+          {/* Apple-Style Header */}
           <div className="text-center mb-20">
-            <h2 className="text-6xl md:text-8xl lg:text-9xl font-black text-white mb-8 leading-[0.8]">
+            <h2 className="text-6xl md:text-8xl lg:text-9xl font-black text-gray-900 mb-8 leading-[0.8]">
               <span className="block">Our</span>
-              <span className="block bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent">
                 Services
               </span>
             </h2>
             
-            <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Professional repair solutions with vibrant results
             </p>
           </div>
@@ -158,41 +158,40 @@ const ServicesPreview = () => {
         </div>
       </section>
 
-      {/* SHKW-Style Dark Cinematic CTA Section */}
-      <section className="py-32 bg-gradient-to-br from-gray-900 via-black to-gray-900 relative overflow-hidden">
+      {/* Apple-Style Light CTA Section */}
+      <section className="py-32 bg-gradient-to-br from-gray-50 via-white to-blue-50/30 relative overflow-hidden">
         
-        {/* Cinematic Background Elements */}
+        {/* Light Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-900/20 via-transparent to-purple-900/20"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-red-500/10 via-transparent to-red-600/10"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center">
             
-            {/* SHKW-Style Massive Typography */}
+            {/* Apple-Style Typography */}
             <div className="max-w-5xl mx-auto mb-12">
-              <h3 className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-black text-white mb-8 leading-[0.8] tracking-tighter">
+              <h3 className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-black text-gray-900 mb-8 leading-[0.8] tracking-tighter">
                 <span className="block">READY TO</span>
-                <span className="block bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <span className="block bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent">
                   GET STARTED?
                 </span>
               </h3>
-              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
                 Bring your device in today. Our experts are ready to transform your electronics.
               </p>
             </div>
             
-            {/* CTA Buttons */}
+            {/* Apple-Style CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <button className="group relative overflow-hidden bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 text-white px-12 py-6 rounded-full text-xl font-bold transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/25 hover:scale-105 hover:-translate-y-1">
+              <button className="group relative overflow-hidden bg-red-700 text-white px-12 py-6 rounded-full text-xl font-bold transition-all duration-300 hover:bg-red-800 hover:shadow-2xl hover:shadow-red-700/25 hover:scale-105 hover:-translate-y-1">
                 <span className="relative z-10 flex items-center gap-3">
                   View All Services
                   <ArrowRight className="group-hover:translate-x-2 transition-transform duration-300" size={24} />
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-700 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
               
-              <button className="bg-white/10 backdrop-blur-xl border-2 border-white/20 text-white px-12 py-6 rounded-full text-xl font-bold hover:bg-white/20 hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+              <button className="bg-white/80 backdrop-blur-xl border-2 border-gray-200 text-gray-900 px-12 py-6 rounded-full text-xl font-bold hover:bg-white hover:border-red-300 hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1">
                 Get Free Quote
               </button>
             </div>
