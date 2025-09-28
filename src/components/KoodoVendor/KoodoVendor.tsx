@@ -132,13 +132,13 @@ const KoodoVendor = () => {
               Visit us today for all your Koodo mobile needs. Our experienced team will help you find the perfect plan and get you connected quickly and efficiently.
             </p>
             
-            {/* Phone Image Placeholder */}
-            <div className="w-full h-64 bg-gray-100 rounded-2xl mb-8 flex items-center justify-center">
-              <div className="text-center">
-                <Smartphone className="text-gray-400 mx-auto mb-4" size={64} />
-                <p className="text-gray-500 text-lg">Koodo Services Image</p>
-                <p className="text-gray-400 text-sm">Phone plans and SIM card activation</p>
-              </div>
+            {/* SIM Card Image */}
+            <div className="w-full h-64 rounded-2xl mb-8 overflow-hidden">
+              <img 
+                src="/images/sim-card.jpg" 
+                alt="SIM card activation and phone plans - Koodo services"
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Features List */}

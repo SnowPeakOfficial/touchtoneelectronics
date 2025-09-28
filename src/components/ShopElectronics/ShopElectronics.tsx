@@ -134,13 +134,13 @@ const ShopElectronics = () => {
               From the latest smartphones to essential home appliances, we carry a comprehensive range of electronics and accessories. Visit our store to see our full inventory and get expert advice on the best products for your needs.
             </p>
             
-            {/* Product Image Placeholder */}
-            <div className="w-full h-64 bg-gray-100 rounded-2xl mb-8 flex items-center justify-center">
-              <div className="text-center">
-                <Monitor className="text-gray-400 mx-auto mb-4" size={64} />
-                <p className="text-gray-500 text-lg">Product Showcase Image</p>
-                <p className="text-gray-400 text-sm">Laptops, smartphones, and tablets display</p>
-              </div>
+            {/* Product Image */}
+            <div className="w-full h-64 rounded-2xl mb-8 overflow-hidden">
+              <img 
+                src="/images/electronics.jpg" 
+                alt="Electronics showcase - laptops, smartphones, and tablets display"
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* CTA Buttons */}
