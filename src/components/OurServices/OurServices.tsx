@@ -100,7 +100,7 @@ const OurServices = () => {
                 {/* Service Card */}
                 <div className={`
                   relative bg-gradient-to-br ${colorScheme.bg}
-                  rounded-3xl p-8 h-full transition-all duration-500 
+                  rounded-3xl p-8 h-full 
                   hover:shadow-2xl ${colorScheme.shadow} cursor-pointer
                   overflow-hidden
                 `}>
@@ -116,7 +116,7 @@ const OurServices = () => {
                   <div className="relative z-10 h-full flex flex-col">
                     
                     {/* Large Icon */}
-                    <div className="w-20 h-20 bg-white/25 backdrop-blur-xl rounded-3xl flex items-center justify-center mb-5 group-hover:bg-white/35 transition-all duration-300 shadow-lg">
+                    <div className="w-20 h-20 bg-white/25 backdrop-blur-xl rounded-3xl flex items-center justify-center mb-5 group-hover:bg-white/35 shadow-lg">
                       <IconComponent className={`${colorScheme.text} drop-shadow-lg`} size={40} />
                     </div>
 
@@ -151,14 +151,14 @@ const OurServices = () => {
                     </div>
 
                     {/* CTA */}
-                    <button className={`group/btn flex items-center gap-3 ${colorScheme.text} font-bold text-base hover:opacity-80 transition-opacity duration-300 bg-white/10 backdrop-blur-sm rounded-xl px-4 py-2 hover:bg-white/20`}>
+                    <button className={`group/btn flex items-center gap-3 ${colorScheme.text} font-bold text-base hover:opacity-80 bg-white/10 backdrop-blur-sm rounded-xl px-4 py-2 hover:bg-white/20`}>
                       Learn More
-                      <ArrowRight size={18} className="group-hover/btn:translate-x-2 transition-transform duration-300" />
+                      <ArrowRight size={18} className="group-hover/btn:translate-x-2" />
                     </button>
                   </div>
 
                   {/* Hover Glow Effect */}
-                  <div className="absolute inset-0 bg-white/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-white/10 rounded-3xl opacity-0 group-hover:opacity-100"></div>
                 </div>
               </motion.div>
             );

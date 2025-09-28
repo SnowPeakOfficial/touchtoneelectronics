@@ -50,7 +50,7 @@ const KoodoVendor = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.1, duration: 0.8 }}
             whileHover={{ y: -5 }}
-            className="bg-gradient-to-br from-red-600 to-red-700 rounded-3xl p-8 text-white shadow-xl hover:shadow-2xl hover:shadow-red-500/25 transition-all duration-500 group cursor-pointer"
+            className="bg-gradient-to-br from-red-600 to-red-700 rounded-3xl p-8 text-white shadow-xl hover:shadow-2xl hover:shadow-red-500/25 group cursor-pointer"
           >
             <div className="w-16 h-16 bg-white/20 backdrop-blur-xl rounded-2xl flex items-center justify-center mb-6 group-hover:bg-white/30 transition-colors duration-300">
               <Smartphone className="text-white" size={32} />
@@ -74,7 +74,7 @@ const KoodoVendor = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.8 }}
             whileHover={{ y: -5 }}
-            className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 group cursor-pointer border border-gray-100"
+            className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl group cursor-pointer border border-gray-100"
           >
             <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-red-200 transition-colors duration-300">
               <CreditCard className="text-red-700" size={32} />
@@ -98,7 +98,7 @@ const KoodoVendor = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.3, duration: 0.8 }}
             whileHover={{ y: -5 }}
-            className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 group cursor-pointer border border-gray-100"
+            className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl group cursor-pointer border border-gray-100"
           >
             <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-red-200 transition-colors duration-300">
               <Zap className="text-red-700" size={32} />

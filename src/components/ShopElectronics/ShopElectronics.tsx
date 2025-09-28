@@ -44,7 +44,7 @@ const ShopElectronics = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.1, duration: 0.8 }}
             whileHover={{ y: -5 }}
-            className="bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 group cursor-pointer text-center"
+            className="bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl group cursor-pointer text-center"
           >
             <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-4 mx-auto group-hover:bg-red-200 transition-colors duration-300">
               <Laptop className="text-red-700" size={32} />
@@ -64,7 +64,7 @@ const ShopElectronics = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.8 }}
             whileHover={{ y: -5 }}
-            className="bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 group cursor-pointer text-center"
+            className="bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl group cursor-pointer text-center"
           >
             <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-4 mx-auto group-hover:bg-red-200 transition-colors duration-300">
               <Smartphone className="text-red-700" size={32} />
@@ -84,7 +84,7 @@ const ShopElectronics = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.3, duration: 0.8 }}
             whileHover={{ y: -5 }}
-            className="bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 group cursor-pointer text-center"
+            className="bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl group cursor-pointer text-center"
           >
             <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-4 mx-auto group-hover:bg-red-200 transition-colors duration-300">
               <Headphones className="text-red-700" size={32} />
@@ -104,7 +104,7 @@ const ShopElectronics = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.4, duration: 0.8 }}
             whileHover={{ y: -5 }}
-            className="bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 group cursor-pointer text-center"
+            className="bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl group cursor-pointer text-center"
           >
             <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-4 mx-auto group-hover:bg-red-200 transition-colors duration-300">
               <Monitor className="text-red-700" size={32} />

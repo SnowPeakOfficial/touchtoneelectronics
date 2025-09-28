@@ -105,7 +105,7 @@ const Testimonials = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.8 }}
               whileHover={{ y: -5 }}
-              className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 group cursor-pointer relative"
+              className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl group cursor-pointer relative"
             >
               {/* Quote Icon */}
               <div className="absolute top-6 right-6 w-12 h-12 bg-red-50 rounded-full flex items-center justify-center">
