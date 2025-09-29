@@ -132,7 +132,7 @@ const HeroSection = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.1, duration: 0.8 }}
               whileHover={{ y: -5 }}
-              className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg hover:shadow-2xl transition-all duration-500 group cursor-pointer text-center"
+              className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg hover:shadow-2xl group cursor-pointer text-center"
             >
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3">
                 Smartphone Repair
@@ -176,7 +176,7 @@ const HeroSection = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.8 }}
               whileHover={{ y: -5 }}
-              className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg hover:shadow-2xl transition-all duration-500 group cursor-pointer text-center"
+              className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg hover:shadow-2xl group cursor-pointer text-center"
             >
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3">
                 Computer Repair
@@ -220,7 +220,7 @@ const HeroSection = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.3, duration: 0.8 }}
               whileHover={{ y: -5 }}
-              className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg hover:shadow-2xl transition-all duration-500 group cursor-pointer text-center"
+              className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg hover:shadow-2xl group cursor-pointer text-center"
             >
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3">
                 Gaming & Entertainment
@@ -264,7 +264,7 @@ const HeroSection = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 0.8 }}
               whileHover={{ y: -5 }}
-              className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg hover:shadow-2xl transition-all duration-500 group cursor-pointer text-center"
+              className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg hover:shadow-2xl group cursor-pointer text-center"
             >
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3">
                 Specialty Repairs
