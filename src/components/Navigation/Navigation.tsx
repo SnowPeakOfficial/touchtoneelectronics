@@ -1,21 +1,12 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone, MapPin } from 'lucide-react';
 import { COMPANY_INFO } from '@/data/constants';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const navItems = [
     { name: 'Home', href: '/' },
@@ -29,19 +20,16 @@ const Navigation = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled 
-          ? 'bg-white/90 backdrop-blur-xl border-b border-gray-200/50 shadow-lg shadow-black/5' 
-          : 'bg-transparent'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-white border-b border-gray-200/30 shadow-sm"
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           
           {/* Company Logo */}
-          <motion.div
+          <motion.a
+            href="/"
             whileHover={{ scale: 1.05 }}
-            className="flex items-center gap-3"
+            className="flex items-center gap-3 cursor-pointer"
           >
             <img
               src="/images/logo.webp"
@@ -52,7 +40,7 @@ const Navigation = () => {
               <div className="text-xl font-black text-gray-900">TouchTone</div>
               <div className="text-xs text-gray-500 font-medium -mt-1">Electronics</div>
             </div>
-          </motion.div>
+          </motion.a>
 
           {/* Desktop Navigation - Apple Style */}
           <div className="hidden lg:flex items-center gap-8">
