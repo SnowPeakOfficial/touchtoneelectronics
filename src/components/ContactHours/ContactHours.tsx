@@ -117,14 +117,17 @@ const ContactHours = () => {
                 Call Now
               </motion.a>
 
-              <motion.button
+              <motion.a
+                href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(COMPANY_INFO.address.full)}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="group flex items-center gap-3 bg-white border-2 border-gray-200 text-gray-900 px-8 py-4 rounded-full text-lg font-semibold hover:border-red-300 hover:shadow-xl transition-all duration-300 justify-center"
               >
                 <Navigation className="group-hover:translate-x-1 transition-transform duration-300" size={20} />
                 Get Directions
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
 
@@ -188,13 +191,19 @@ const ContactHours = () => {
         >
           <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Find Us</h3>
           
-          {/* Map Placeholder */}
-          <div className="w-full h-96 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
-            <div className="text-center">
-              <MapPin className="text-gray-400 mx-auto mb-4" size={64} />
-              <p className="text-gray-500 text-lg">Interactive Map</p>
-              <p className="text-gray-400 text-sm">33-377 Burnhamthorpe Rd E, Mississauga</p>
-            </div>
+          {/* Interactive Google Map */}
+          <div className="w-full h-96 rounded-2xl overflow-hidden mb-6 shadow-lg">
+            <iframe
+              src="https://maps.google.com/maps?q=33-377%20Burnhamthorpe%20Rd%20E,%20Mississauga,%20ON,%20L5A%203Y1&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="TouchTone Electronics Location"
+              className="w-full h-full"
+            />
           </div>
 
           {/* Location Features */}
