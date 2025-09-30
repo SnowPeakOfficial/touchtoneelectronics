@@ -7,8 +7,8 @@ import { COMPANY_INFO } from '@/data/constants';
 
 const ContactHours = () => {
   const hours = [
-    { day: 'Monday - Friday', time: '10:00 AM - 7:00 PM' },
-    { day: 'Saturday', time: '10:30 AM - 6:00 PM' },
+    { day: 'Monday - Friday', time: '10:00 AM - 8:00 PM' },
+    { day: 'Saturday', time: '11:00 AM - 6:00 PM' },
     { day: 'Sunday', time: '12:00 PM - 5:00 PM' }
   ];
 
@@ -160,15 +160,6 @@ const ContactHours = () => {
                   <span className="text-gray-900 font-semibold text-lg">{schedule.time}</span>
                 </motion.div>
               ))}
-            </div>
-
-            {/* Current Status */}
-            <div className="mt-8 p-4 bg-green-50 rounded-2xl border border-green-200">
-              <div className="flex items-center gap-3">
-                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-green-700 font-semibold">Open Now</span>
-              </div>
-              <p className="text-green-600 text-sm mt-1">We&apos;re here to help you today!</p>
             </div>
 
             {/* Emergency Contact */}
