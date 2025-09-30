@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Laptop, Smartphone, Headphones, Monitor } from 'lucide-react';
+import { ArrowRight, Laptop, Smartphone, Headphones, Zap, Phone } from 'lucide-react';
 
 const ShopElectronics = () => {
   return (
@@ -35,7 +35,7 @@ const ShopElectronics = () => {
         </motion.div>
 
         {/* Product Categories Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-16">
           
           {/* Computers & Laptops */}
           <motion.div
@@ -97,7 +97,7 @@ const ShopElectronics = () => {
             </p>
           </motion.div>
 
-          {/* Appliances & Hardware */}
+          {/* International Power Adaptors and Voltage Converters */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -107,13 +107,33 @@ const ShopElectronics = () => {
             className="bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl group cursor-pointer text-center"
           >
             <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-4 mx-auto group-hover:bg-red-200 transition-colors duration-300">
-              <Monitor className="text-red-700" size={32} />
+              <Zap className="text-red-700" size={32} />
             </div>
             <h3 className="text-lg font-bold text-gray-900 mb-2">
-              Appliances & Hardware
+              Power Adaptors and Converters
             </h3>
             <p className="text-sm text-gray-600">
-              Home appliances and electronic hardware
+              Travel adaptors and voltage converters for international use
+            </p>
+          </motion.div>
+
+          {/* Home Phone Devices */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+            whileHover={{ y: -5 }}
+            className="bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl group cursor-pointer text-center"
+          >
+            <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-4 mx-auto group-hover:bg-red-200 transition-colors duration-300">
+              <Phone className="text-red-700" size={32} />
+            </div>
+            <h3 className="text-lg font-bold text-gray-900 mb-2">
+              Home Phone Devices
+            </h3>
+            <p className="text-sm text-gray-600">
+              Landline phones and home communication devices
             </p>
           </motion.div>
         </div>

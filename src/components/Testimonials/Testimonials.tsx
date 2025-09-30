@@ -7,35 +7,31 @@ import { Star, Quote, CheckCircle } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    location: "Mississauga, ON",
+    name: "Ritika Taneja",
     rating: 5,
-    text: "TouchTone Electronics fixed my iPhone screen in just 2 hours! The quality is perfect and the price was very reasonable. Highly recommend their services.",
+    text: "I had a great experience with the customer service at TouchTone. The owner was friendly, attentive, and went out of their way to help me find exactly what I needed. It's refreshing to be treated with such professionalism and care. I'll definitely be coming back—highly recommend!",
     service: "Screen Repair"
   },
   {
     id: 2,
-    name: "Mike Chen",
-    location: "Toronto, ON",
+    name: "Munigala Laxman",
     rating: 5,
-    text: "Great experience setting up my Koodo plan. The staff was knowledgeable and helped me find the perfect plan for my needs. Very professional service.",
-    service: "Koodo Setup"
+    text: "Excellent service! Got my phone repaired quickly and professionally—feels brand new. The staff was friendly and knowledgeable. Also picked up a stylish phone pouch; great quality and design. Prices are fair, and everything was handled with care. Highly recommend for anyone needing phone repairs or accessories. Will definitely return!",
+    service: "Phone Repair"
   },
   {
     id: 3,
-    name: "Emily Rodriguez",
-    location: "Oakville, ON",
+    name: "Sriram Medepalli",
     rating: 5,
-    text: "They repaired my laptop when other places said it couldn't be fixed. Amazing technical skills and honest pricing. Will definitely come back!",
-    service: "Computer Repair"
+    text: "I gave my phone for repair to Touchstone Electronics. The phone was fixed very fast. The service and the technician were very good. It was very fast reliable and reasonable. He does repairs for all electronic Items. I would be definitely going there for any future repairs.",
+    service: "Phone Repair"
   },
   {
     id: 4,
-    name: "David Thompson",
-    location: "Brampton, ON",
+    name: "Raj Singh",
     rating: 5,
-    text: "Excellent customer service and quick turnaround. They unlocked my phone and explained everything clearly. Very satisfied with the results.",
-    service: "Phone Unlocking"
+    text: "Had to change my watch belt. Salim provided amazing service with quick turn around. Would definitely recommend this place.",
+    service: "Watch Repair"
   }
 ];
 
@@ -105,7 +101,7 @@ const Testimonials = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.8 }}
               whileHover={{ y: -5 }}
-              className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl group cursor-pointer relative"
+              className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl group cursor-pointer relative flex flex-col h-full"
             >
               {/* Quote Icon */}
               <div className="absolute top-6 right-6 w-12 h-12 bg-red-50 rounded-full flex items-center justify-center">
@@ -120,17 +116,17 @@ const Testimonials = () => {
               </div>
 
               {/* Testimonial Text */}
-              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+              <p className="text-gray-700 leading-relaxed mb-6 text-lg flex-grow">
                 &ldquo;{testimonial.text}&rdquo;
               </p>
 
               {/* Customer Info */}
-              <div className="flex items-center justify-between">
-                <div>
+              <div className="flex items-center justify-between mt-auto">
+                <div className="flex-1">
                   <div className="font-bold text-gray-900">{testimonial.name}</div>
-                  <div className="text-gray-500 text-sm">{testimonial.location}</div>
+                  <div className="text-gray-500 text-sm">Verified Customer</div>
                 </div>
-                <div className="text-right">
+                <div className="flex-shrink-0">
                   <div className="inline-flex items-center gap-2 bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-medium">
                     <CheckCircle size={14} />
                     {testimonial.service}
