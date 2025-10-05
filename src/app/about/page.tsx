@@ -16,7 +16,6 @@ import {
   Gamepad2,
   ShoppingBag,
   Phone,
-  ArrowRight,
   CheckCircle2
 } from 'lucide-react';
 import { COMPANY_INFO } from '@/data/constants';
