@@ -123,7 +123,7 @@ const ServicesPreview = () => {
                       </p>
 
                       {/* Stats Row */}
-                      <div className="flex justify-between items-center mb-4 bg-white/10 backdrop-blur-sm rounded-2xl p-3">
+                      <div className="flex justify-between items-center bg-white/10 backdrop-blur-sm rounded-2xl p-3">
                         <div className="text-center">
                           <div className={`text-base font-black ${colorScheme.text}`}>
                             {service.estimatedTime}
@@ -141,12 +141,6 @@ const ServicesPreview = () => {
                           </div>
                         </div>
                       </div>
-
-                      {/* CTA */}
-                      <button className={`group/btn flex items-center gap-3 ${colorScheme.text} font-bold text-base hover:opacity-80 transition-opacity duration-300 bg-white/10 backdrop-blur-sm rounded-xl px-4 py-2 hover:bg-white/20`}>
-                        Learn More
-                        <ArrowRight size={18} className="group-hover/btn:translate-x-2 transition-transform duration-300" />
-                      </button>
                     </div>
 
                     {/* Hover Glow Effect */}
@@ -185,16 +179,12 @@ const ServicesPreview = () => {
             
             {/* Apple-Style CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <button className="group relative overflow-hidden bg-red-700 text-white px-12 py-6 rounded-full text-xl font-bold transition-all duration-300 hover:bg-red-800 hover:shadow-2xl hover:shadow-red-700/25 hover:scale-105 hover:-translate-y-1">
+              <a href="/contact" className="group relative overflow-hidden bg-red-700 text-white px-12 py-6 rounded-full text-xl font-bold transition-all duration-300 hover:bg-red-800 hover:shadow-2xl hover:shadow-red-700/25 hover:scale-105 hover:-translate-y-1">
                 <span className="relative z-10 flex items-center gap-3">
-                  View All Services
+                  Get Free Quote
                   <ArrowRight className="group-hover:translate-x-2 transition-transform duration-300" size={24} />
                 </span>
-              </button>
-              
-              <button className="bg-white/80 backdrop-blur-xl border-2 border-gray-200 text-gray-900 px-12 py-6 rounded-full text-xl font-bold hover:bg-white hover:border-red-300 hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1">
-                Get Free Quote
-              </button>
+              </a>
             </div>
           </div>
         </div>

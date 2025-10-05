@@ -144,20 +144,14 @@ const HeroSection = () => {
                 All major brands supported
               </div>
               <div className="flex gap-3 justify-center mb-8">
-                <motion.button
+                <motion.a
+                  href="/contact"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-red-700 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-red-800 transition-colors duration-300"
                 >
-                  Learn more
-                </motion.button>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="border border-gray-400 text-gray-700 px-5 py-2.5 rounded-full text-sm font-medium hover:border-red-400 hover:text-red-700 transition-colors duration-300"
-                >
                   Get Quote
-                </motion.button>
+                </motion.a>
               </div>
               {/* Smartphone Repair Image - 25% Bigger */}
               <div className="w-full h-80 rounded-2xl overflow-hidden">
@@ -188,20 +182,14 @@ const HeroSection = () => {
                 Same-day diagnostics
               </div>
               <div className="flex gap-3 justify-center mb-8">
-                <motion.button
+                <motion.a
+                  href="/contact"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-red-700 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-red-800 transition-colors duration-300"
                 >
-                  Learn more
-                </motion.button>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="border border-gray-400 text-gray-700 px-5 py-2.5 rounded-full text-sm font-medium hover:border-red-400 hover:text-red-700 transition-colors duration-300"
-                >
                   Get Quote
-                </motion.button>
+                </motion.a>
               </div>
               {/* Computer Repair Image */}
               <div className="w-full h-64 rounded-2xl overflow-hidden">
@@ -232,20 +220,14 @@ const HeroSection = () => {
                 Quick turnaround
               </div>
               <div className="flex gap-3 justify-center mb-8">
-                <motion.button
+                <motion.a
+                  href="/contact"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-red-700 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-red-800 transition-colors duration-300"
                 >
-                  Learn more
-                </motion.button>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="border border-gray-400 text-gray-700 px-5 py-2.5 rounded-full text-sm font-medium hover:border-red-400 hover:text-red-700 transition-colors duration-300"
-                >
                   Get Quote
-                </motion.button>
+                </motion.a>
               </div>
               {/* Gaming & Entertainment Image - 25% Bigger */}
               <div className="w-full h-80 rounded-2xl overflow-hidden">
@@ -276,20 +258,14 @@ const HeroSection = () => {
                 15+ years experience
               </div>
               <div className="flex gap-3 justify-center mb-8">
-                <motion.button
+                <motion.a
+                  href="/contact"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-red-700 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-red-800 transition-colors duration-300"
                 >
-                  Learn more
-                </motion.button>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="border border-gray-400 text-gray-700 px-5 py-2.5 rounded-full text-sm font-medium hover:border-red-400 hover:text-red-700 transition-colors duration-300"
-                >
                   Get Quote
-                </motion.button>
+                </motion.a>
               </div>
               {/* Specialty Repairs Image */}
               <div className="w-full h-64 rounded-2xl overflow-hidden">

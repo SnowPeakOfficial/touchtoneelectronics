@@ -37,24 +37,17 @@ const ReadyToGetStarted = () => {
           
           {/* Apple-Style CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <motion.button
+            <motion.a
+              href="/contact"
               whileHover={{ scale: 1.05, y: -4 }}
               whileTap={{ scale: 0.95 }}
               className="group relative overflow-hidden bg-red-700 text-white px-12 py-6 rounded-full text-xl font-bold transition-all duration-300 hover:bg-red-800 hover:shadow-2xl hover:shadow-red-700/25"
             >
               <span className="relative z-10 flex items-center gap-3">
-                View All Services
+                Get Free Quote
                 <ArrowRight className="group-hover:translate-x-2 transition-transform duration-300" size={24} />
               </span>
-            </motion.button>
-            
-            <motion.button
-              whileHover={{ scale: 1.05, y: -4 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-white/80 backdrop-blur-xl border-2 border-gray-200 text-gray-900 px-12 py-6 rounded-full text-xl font-bold hover:bg-white hover:border-red-300 hover:shadow-xl transition-all duration-300"
-            >
-              Get Free Quote
-            </motion.button>
+            </motion.a>
           </div>
         </motion.div>
       </div>

@@ -131,7 +131,7 @@ const OurServices = () => {
                     </p>
 
                     {/* Stats Row */}
-                    <div className="flex justify-between items-center mb-4 bg-white/10 backdrop-blur-sm rounded-2xl p-3">
+                    <div className="flex justify-between items-center bg-white/10 backdrop-blur-sm rounded-2xl p-3">
                       <div className="text-center">
                         <div className={`text-base font-black ${colorScheme.text}`}>
                           {service.estimatedTime}
@@ -149,12 +149,6 @@ const OurServices = () => {
                         </div>
                       </div>
                     </div>
-
-                    {/* CTA */}
-                    <button className={`group/btn flex items-center gap-3 ${colorScheme.text} font-bold text-base hover:opacity-80 bg-white/10 backdrop-blur-sm rounded-xl px-4 py-2 hover:bg-white/20`}>
-                      Learn More
-                      <ArrowRight size={18} className="group-hover/btn:translate-x-2" />
-                    </button>
                   </div>
 
                   {/* Hover Glow Effect */}

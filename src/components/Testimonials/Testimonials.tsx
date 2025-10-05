@@ -175,7 +175,8 @@ const Testimonials = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
+              <motion.a
+                href="/contact"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="group relative overflow-hidden bg-red-700 text-white px-10 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-red-800 hover:shadow-2xl hover:shadow-red-700/25"
@@ -184,15 +185,7 @@ const Testimonials = () => {
                   Get Your Free Quote
                   <CheckCircle className="group-hover:scale-110 transition-transform duration-300" size={20} />
                 </span>
-              </motion.button>
-
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="group flex items-center gap-3 bg-white/80 backdrop-blur-xl border-2 border-gray-200 text-gray-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:border-red-300 hover:shadow-xl transition-all duration-300 justify-center"
-              >
-                Read More Reviews
-              </motion.button>
+              </motion.a>
             </div>
           </div>
         </motion.div>
