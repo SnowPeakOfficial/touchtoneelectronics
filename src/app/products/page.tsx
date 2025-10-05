@@ -146,7 +146,7 @@ const ProductsPage = () => {
               Browse by Category
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-              Find exactly what you're looking for
+              Find exactly what you&apos;re looking for
             </p>
           </motion.div>
 
