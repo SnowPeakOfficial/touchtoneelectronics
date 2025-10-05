@@ -61,7 +61,8 @@ const HeroSection = () => {
             transition={{ delay: 1.1, duration: 0.8 }}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-8"
           >
-            <motion.button
+            <motion.a
+              href="/contact"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="group relative overflow-hidden bg-red-700 text-white px-10 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-red-800 hover:shadow-2xl hover:shadow-red-700/25"
@@ -70,7 +71,7 @@ const HeroSection = () => {
                 Get Free Quote
                 <ArrowRight className="group-hover:translate-x-1 transition-transform duration-300" size={20} />
               </span>
-            </motion.button>
+            </motion.a>
 
             <motion.a
               href={`tel:${COMPANY_INFO.phone}`}

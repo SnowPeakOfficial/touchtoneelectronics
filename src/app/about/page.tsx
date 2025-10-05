@@ -210,7 +210,7 @@ const AboutPage = () => {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1, duration: 0.6 }}
                   whileHover={{ y: -5 }}
-                  className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300"
+                  className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl"
                 >
                   <div className={`w-16 h-16 bg-gradient-to-r ${item.color} rounded-2xl flex items-center justify-center mb-6`}>
                     <Icon className="text-white" size={32} />

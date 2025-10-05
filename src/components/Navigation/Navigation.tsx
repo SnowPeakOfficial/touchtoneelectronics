@@ -1,12 +1,14 @@
 'use client';
 
 import React, { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone, MapPin } from 'lucide-react';
 import { COMPANY_INFO } from '@/data/constants';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const navItems = [
     { name: 'Home', href: '/' },
@@ -44,20 +46,27 @@ const Navigation = () => {
 
           {/* Desktop Navigation - Apple Style */}
           <div className="hidden lg:flex items-center gap-8">
-            {navItems.map((item, index) => (
-              <motion.a
-                key={item.name}
-                href={item.href}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
-                whileHover={{ y: -2 }}
-                className="text-gray-700 hover:text-red-700 font-medium text-lg transition-all duration-300 relative group"
-              >
-                {item.name}
-                <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-700 group-hover:w-full transition-all duration-300"></div>
-              </motion.a>
-            ))}
+            {navItems.map((item, index) => {
+              const isActive = pathname === item.href;
+              return (
+                <motion.a
+                  key={item.name}
+                  href={item.href}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1, duration: 0.6 }}
+                  whileHover={{ y: -2 }}
+                  className={`font-medium text-lg transition-all duration-300 relative group ${
+                    isActive ? 'text-red-700' : 'text-gray-700 hover:text-red-700'
+                  }`}
+                >
+                  {item.name}
+                  <div className={`absolute -bottom-1 left-0 h-0.5 bg-red-700 transition-all duration-300 ${
+                    isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}></div>
+                </motion.a>
+              );
+            })}
           </div>
 
           {/* Apple-style CTA Buttons */}
@@ -72,13 +81,14 @@ const Navigation = () => {
               <span className="hidden xl:block">Call Now</span>
             </motion.a>
             
-            <motion.button
+            <motion.a
+              href="/contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-red-700 text-white px-6 py-3 rounded-full font-semibold hover:bg-red-800 transition-all duration-300 shadow-lg shadow-red-700/25"
+              className="bg-red-700 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-red-800 transition-colors duration-300 shadow-lg hover:shadow-xl"
             >
               Get Quote
-            </motion.button>
+            </motion.a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -126,19 +136,24 @@ const Navigation = () => {
           >
             <div className="container mx-auto px-6 py-6">
               <div className="space-y-4">
-                {navItems.map((item, index) => (
-                  <motion.a
-                    key={item.name}
-                    href={item.href}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.1, duration: 0.4 }}
-                    onClick={() => setIsOpen(false)}
-                    className="block text-xl font-semibold text-gray-700 hover:text-red-700 transition-colors duration-300 py-2"
-                  >
-                    {item.name}
-                  </motion.a>
-                ))}
+                {navItems.map((item, index) => {
+                  const isActive = pathname === item.href;
+                  return (
+                    <motion.a
+                      key={item.name}
+                      href={item.href}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.1, duration: 0.4 }}
+                      onClick={() => setIsOpen(false)}
+                      className={`block text-xl font-semibold transition-colors duration-300 py-2 ${
+                        isActive ? 'text-red-700' : 'text-gray-700 hover:text-red-700'
+                      }`}
+                    >
+                      {item.name}
+                    </motion.a>
+                  );
+                })}
                 
                 <div className="pt-4 border-t border-gray-200 space-y-4">
                   <motion.a
