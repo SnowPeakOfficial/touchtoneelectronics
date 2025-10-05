@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone, MapPin } from 'lucide-react';
@@ -8,7 +8,12 @@ import { COMPANY_INFO } from '@/data/constants';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const navItems = [
     { name: 'Home', href: '/' },
@@ -47,7 +52,7 @@ const Navigation = () => {
           {/* Desktop Navigation - Apple Style */}
           <div className="hidden lg:flex items-center gap-8">
             {navItems.map((item, index) => {
-              const isActive = pathname === item.href;
+              const isActive = mounted && pathname === item.href;
               return (
                 <motion.a
                   key={item.name}
@@ -137,7 +142,7 @@ const Navigation = () => {
             <div className="container mx-auto px-6 py-6">
               <div className="space-y-4">
                 {navItems.map((item, index) => {
-                  const isActive = pathname === item.href;
+                  const isActive = mounted && pathname === item.href;
                   return (
                     <motion.a
                       key={item.name}
