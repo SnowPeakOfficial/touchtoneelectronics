@@ -93,10 +93,10 @@ const Footer = () => {
                   Home
                 </Link>
                 <Link
-                  href="/services"
+                  href="/products"
                   className="block text-gray-400 hover:text-red-400 transition-colors duration-300 text-base"
                 >
-                  Services
+                  Products
                 </Link>
                 <Link
                   href="/contact"
