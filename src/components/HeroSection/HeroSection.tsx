@@ -16,7 +16,7 @@ const HeroSection = () => {
           <motion.h1
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 1.2, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ delay: 0.15, duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
             className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.1] tracking-tighter mb-6"
             style={{
               textShadow: '0 4px 20px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.1)'
@@ -37,7 +37,7 @@ const HeroSection = () => {
           <motion.p
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 1 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
             className="text-xl md:text-2xl lg:text-3xl text-gray-600 leading-relaxed font-light max-w-4xl mx-auto mb-6"
             style={{
               textShadow: '0 2px 10px rgba(0, 0, 0, 0.1)'
@@ -58,7 +58,7 @@ const HeroSection = () => {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.1, duration: 0.8 }}
+            transition={{ delay: 0.55, duration: 0.4 }}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-8"
           >
             <motion.a
@@ -88,7 +88,7 @@ const HeroSection = () => {
           <motion.div
             initial={{ scale: 0.8, opacity: 0, y: 100 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
-            transition={{ delay: 1.4, duration: 1.5, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ delay: 0.7, duration: 0.75, ease: [0.25, 0.1, 0.25, 1] }}
             className="relative"
           >
             <img
@@ -109,7 +109,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.5 }}
             className="text-center mb-20"
           >
             <h2 className="text-5xl md:text-7xl lg:text-8xl font-black text-gray-900 mb-8 leading-[0.9]">
@@ -131,7 +131,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.1, duration: 0.8 }}
+              transition={{ delay: 0.05, duration: 0.4 }}
               whileHover={{ y: -5 }}
               className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg hover:shadow-2xl group cursor-pointer text-center"
             >
@@ -169,7 +169,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.2, duration: 0.8 }}
+              transition={{ delay: 0.1, duration: 0.4 }}
               whileHover={{ y: -5 }}
               className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg hover:shadow-2xl group cursor-pointer text-center"
             >
@@ -207,7 +207,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.3, duration: 0.8 }}
+              transition={{ delay: 0.15, duration: 0.4 }}
               whileHover={{ y: -5 }}
               className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg hover:shadow-2xl group cursor-pointer text-center"
             >
@@ -245,7 +245,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.4, duration: 0.8 }}
+              transition={{ delay: 0.2, duration: 0.4 }}
               whileHover={{ y: -5 }}
               className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg hover:shadow-2xl group cursor-pointer text-center"
             >
@@ -292,7 +292,7 @@ const HeroSection = () => {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
+                transition={{ delay: index * 0.05, duration: 0.3 }}
                 whileHover={{ scale: 1.05, y: -5 }}
                 className="text-center group cursor-pointer"
               >

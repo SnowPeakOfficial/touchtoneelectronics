@@ -26,7 +26,7 @@ const Navigation = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+      transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-white border-b border-gray-200/30 shadow-sm"
     >
       <div className="container mx-auto px-6">
@@ -59,7 +59,7 @@ const Navigation = () => {
                   href={item.href}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1, duration: 0.6 }}
+                  transition={{ delay: index * 0.05, duration: 0.3 }}
                   whileHover={{ y: -2 }}
                   className={`font-medium text-lg transition-all duration-300 relative group ${
                     isActive ? 'text-red-700' : 'text-gray-700 hover:text-red-700'
@@ -136,7 +136,7 @@ const Navigation = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ duration: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
             className="lg:hidden bg-white/95 backdrop-blur-xl border-t border-gray-200/50"
           >
             <div className="container mx-auto px-6 py-6">
@@ -149,7 +149,7 @@ const Navigation = () => {
                       href={item.href}
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.1, duration: 0.4 }}
+                      transition={{ delay: index * 0.05, duration: 0.2 }}
                       onClick={() => setIsOpen(false)}
                       className={`block text-xl font-semibold transition-colors duration-300 py-2 ${
                         isActive ? 'text-red-700' : 'text-gray-700 hover:text-red-700'
@@ -165,7 +165,7 @@ const Navigation = () => {
                     href={`tel:${COMPANY_INFO.phone}`}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.4, duration: 0.4 }}
+                    transition={{ delay: 0.2, duration: 0.2 }}
                     className="flex items-center gap-3 text-red-700 font-semibold text-lg"
                   >
                     <Phone size={20} />
@@ -175,7 +175,7 @@ const Navigation = () => {
                   <motion.div
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.5, duration: 0.4 }}
+                    transition={{ delay: 0.25, duration: 0.2 }}
                     className="flex items-center gap-3 text-gray-600"
                   >
                     <MapPin size={20} />
@@ -185,7 +185,7 @@ const Navigation = () => {
                   <motion.button
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.6, duration: 0.4 }}
+                    transition={{ delay: 0.3, duration: 0.2 }}
                     whileTap={{ scale: 0.95 }}
                     className="w-full bg-red-700 text-white py-4 rounded-2xl font-semibold text-lg hover:bg-red-800 transition-colors duration-300"
                   >

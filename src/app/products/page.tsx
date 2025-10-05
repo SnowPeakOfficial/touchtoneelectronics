@@ -93,7 +93,7 @@ const ProductsPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-gray-900 mb-6 leading-[0.9]">
               <span className="block">Shop</span>
@@ -139,7 +139,7 @@ const ProductsPage = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
@@ -159,7 +159,7 @@ const ProductsPage = () => {
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: index * 0.1, duration: 0.6 }}
+                  transition={{ delay: index * 0.05, duration: 0.3 }}
                   whileHover={{ y: -5, scale: 1.02 }}
                   className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 shadow-lg hover:shadow-2xl  cursor-pointer border border-gray-100 group"
                 >
@@ -186,7 +186,7 @@ const ProductsPage = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
@@ -204,7 +204,7 @@ const ProductsPage = () => {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
+                transition={{ delay: index * 0.05, duration: 0.3 }}
                 whileHover={{ y: -8 }}
                 className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl  group"
               >
@@ -278,7 +278,7 @@ const ProductsPage = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6">
               Can&apos;t Find What You&apos;re Looking For?
